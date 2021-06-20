@@ -4,11 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class LevelMenu : MonoBehaviour
 {
-    public void QuitGame ()
+    public void PlayLevel ()
     {
-        Debug.Log("Quit");
-        Application.Quit();
+        SceneManager.LoadScene(2);
     }
 }
